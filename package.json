@@ -1,0 +1,46 @@
+{
+  "name": "fastify-ts-di",
+  "version": "1.0.0",
+  "description": "Base snapshot to start new project",
+  "main": "dist/main.js",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon",
+    "build": "tsc",
+    "dev:inspect": "nodemon -e ts,json --exec node --inspect=localhost:$PORT -r ts-node/register src/main.ts",
+    "lint": "eslint ./src/**",
+    "lint:fix": "eslint ./src/** --fix"
+  },
+  "keywords": [],
+  "author": "br4instormer",
+  "license": "ISC",
+  "engines": {
+    "node": "^18.16"
+  },
+  "dependencies": {
+    "@fastify/cookie": "^8.3.0",
+    "@fastify/cors": "^8.2.1",
+    "@fastify/jwt": "^6.7.1",
+    "bcryptjs": "^2.4.3",
+    "dotenv-flow": "^3.2.0",
+    "fastify": "^4.15.0",
+    "inversify": "^6.0.1",
+    "reflect-metadata": "^0.1.13",
+    "tslog": "^4.8.2"
+  },
+  "devDependencies": {
+    "@types/dotenv-flow": "^3.2.0",
+    "@types/node": "^18.15.13",
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "@typescript-eslint/parser": "^5.59.0",
+    "eslint": "^8.38.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "nodemon": "^2.0.22",
+    "prettier": "^2.8.7",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
+}
