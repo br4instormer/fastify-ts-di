@@ -9,7 +9,7 @@
     "start": "node .",
     "dev": "nodemon",
     "build": "tsc",
-    "dev:inspect": "nodemon -e ts,json --exec node --inspect=localhost:$PORT -r ts-node/register src/main.ts",
+    "dev:inspect": "nodemon -e ts,json --exec node --inspect=localhost:9229 -r ts-node/register src/main.ts",
     "lint": "eslint ./src/**",
     "lint:fix": "eslint ./src/** --fix"
   },
